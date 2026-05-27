@@ -1,0 +1,108 @@
+# Butterfly 主题配置文件
+# 参考文档：https://butterfly.js.org/
+
+# 全局设置
+avatar: /img/avatar.png   # 请将头像图片放入 source/img/ 目录下
+favicon: /img/favicon.ico
+site_subtitle: 记录动漫与代码的日常
+subtitle:
+  enable: false
+  effect: false
+  loop: false
+  source: # 可配置动态文字
+
+# 导航菜单
+menu:
+  首页: / || fas fa-home
+  归档: /archives/ || fas fa-archive
+  标签: /tags/ || fas fa-tags
+  分类: /categories/ || fas fa-folder-open
+  关于: /about/ || fas fa-heart
+  # 留言板: /comment/ || fas fa-comment
+
+# 代码高亮主题 (可选: darker / pale night / light / ocean)
+highlight_theme: darker
+
+# 侧边栏
+aside:
+  enable: true
+  mobile: true
+  position: right
+  card_author:
+    enable: true
+    description: 一个喜欢动漫的开发者
+  card_announcement:
+    enable: true
+    content: 欢迎来到我的小站～
+  card_recent_post:
+    enable: true
+    limit: 5
+  card_categories:
+    enable: true
+    limit: 8
+  card_tags:
+    enable: true
+    limit: 20
+
+# 右下角按钮
+rightside:
+  enable: true
+  comment: true
+  readmode: false
+
+# 页脚
+footer:
+  owner:
+    enable: true
+    since: 2026
+  copyright: true
+  custom_text:
+
+# 文章页相关
+post_pagination: true
+post_copyright:
+  enable: true
+  license: CC BY-NC-SA 4.0
+reward:
+  enable: false
+
+# 评论系统（按需开启，以 Giscus 为例）
+comments:
+  use: # 填写使用的评论系统，如: giscus, valine, waline 等
+    - giscus
+  giscus:
+    repo: kssku/kssku-blog
+    repo_id: # 请去 https://giscus.app 生成
+    category: Announcements
+    category_id: # 同上
+    mapping: pathname
+    strict: 0
+    reactions_enabled: 1
+    emit_metadata: 0
+    input_position: top
+    theme: light
+    lang: zh-CN
+
+# 数学公式
+mathjax:
+  enable: false
+katex:
+  enable: false
+
+# 字数统计
+wordcount:
+  enable: true
+  count: true
+  time: true
+
+# 右下角聊天按钮
+chat_btn: false
+
+# PWA
+pwa:
+  enable: false
+
+# 其他功能
+instantpage: true
+preloader: true
+loading_bg: # 可选
